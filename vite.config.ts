@@ -18,5 +18,5 @@ export default defineConfig(({ mode }) => ({
   },
   // Add base path for GitHub Pages - use your repository name
   // If your repo is <username>.github.io, you can leave this as "/"
-  base: process.env.NODE_ENV === 'production' ? '/my-custom-project-name/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/scratch-sdg-tutorial/' : '/',
 }));
