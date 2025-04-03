@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
@@ -30,8 +29,8 @@ const Index = () => {
             <div className="md:w-1/2">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1564054074885-e5a7c93671d7?auto=format&fit=crop&w=800&q=80" 
-                  alt="Kids coding together" 
+                  src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" 
+                  alt="Students learning in classroom" 
                   className="rounded-lg shadow-lg"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-sdg-education text-white p-3 rounded-lg shadow-lg">
