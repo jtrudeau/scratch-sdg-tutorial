@@ -11,12 +11,15 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Determine if we're in production mode to set the correct basename
+const basename = import.meta.env.PROD ? "/scratch-sdg-tutorial" : "/";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/scratch-sdg-tutorial">
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sdgs" element={<SDGList />} />
