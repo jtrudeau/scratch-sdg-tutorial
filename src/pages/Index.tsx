@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Code, Cpu, Database } from "lucide-react";
 
 const Index = () => {
   return (
@@ -12,17 +12,17 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
               <h1 className="text-4xl md:text-5xl font-bold text-sdg-navy leading-tight mb-6">
-                SDG Heroes Unite: Code for a Better World
+                SDG Heroes Unite: STEAM Challenge for Sustainability
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Learn to create fun Scratch projects that address the United Nations Sustainable Development Goals. Perfect for 6th graders!
+                Create innovative technology solutions for the Sustainable Development Goals using game design or microcomputing to address real-world environmental challenges.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild className="bg-sdg-blue hover:bg-sdg-navy text-white rounded-full px-8 py-6 text-lg">
                   <Link to="/sdgs">Explore the SDGs</Link>
                 </Button>
                 <Button asChild variant="outline" className="border-sdg-blue text-sdg-blue hover:bg-blue-50 rounded-full px-8 py-6 text-lg">
-                  <Link to="/tutorial">Start Coding</Link>
+                  <Link to="/presentation">Presentation Guide</Link>
                 </Button>
               </div>
             </div>
@@ -43,44 +43,44 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* Challenge Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-sdg-navy mb-4">What Are the SDGs?</h2>
+            <h2 className="text-3xl font-bold text-sdg-navy mb-4">The Data Storytelling and Engineering Challenge</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The Sustainable Development Goals (SDGs) are a set of 17 goals adopted by the United Nations to create a better and more sustainable future for all by 2030.
+              Prototype innovative technology solutions to address sustainability challenges. Apply concepts from data analysis, green energy, and artificial intelligence to create real-world impact.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="bg-sdg-blue rounded-full w-12 h-12 flex items-center justify-center text-white mb-4">
-                <span className="text-xl font-bold">17</span>
+                <Code className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold text-sdg-navy mb-2">Global Goals</h3>
+              <h3 className="text-xl font-bold text-sdg-navy mb-2">Game Design</h3>
               <p className="text-gray-600">
-                17 interconnected goals addressing challenges like poverty, inequality, climate change, and environmental protection.
+                Create Scratch games or interactive experiences that educate and inspire action on the SDGs through engaging storytelling.
               </p>
             </div>
             
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="bg-sdg-blue rounded-full w-12 h-12 flex items-center justify-center text-white mb-4">
-                <span className="text-xl font-bold">6</span>
+                <Cpu className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold text-sdg-navy mb-2">Scratch Projects</h3>
+              <h3 className="text-xl font-bold text-sdg-navy mb-2">Microcomputing</h3>
               <p className="text-gray-600">
-                Use block-based coding to create games, stories, and animations that raise awareness about the SDGs.
+                Build Arduino-based prototypes that monitor environmental data, demonstrate sustainable solutions, or address local challenges.
               </p>
             </div>
             
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="bg-sdg-blue rounded-full w-12 h-12 flex items-center justify-center text-white mb-4">
-                <span className="text-xl font-bold">1</span>
+                <Database className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold text-sdg-navy mb-2">World to Change</h3>
+              <h3 className="text-xl font-bold text-sdg-navy mb-2">Data Analysis</h3>
               <p className="text-gray-600">
-                Together, we can create positive change by sharing knowledge, taking action, and inspiring others.
+                Incorporate data collection and analysis into your projects to measure impact and create evidence-based solutions.
               </p>
             </div>
           </div>
@@ -141,13 +141,18 @@ const Index = () => {
       {/* Call to Action */}
       <section className="py-16 bg-sdg-blue bg-opacity-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-sdg-navy mb-6">Ready to Start Your SDG Journey?</h2>
+          <h2 className="text-3xl font-bold text-sdg-navy mb-6">Ready to Start Your STEAM Challenge?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Follow our step-by-step tutorial to create an educational game with Scratch that helps teach others about SDG 4.
+            Use our resources to develop your solution and prepare your presentation showcasing your innovative technology for sustainability.
           </p>
-          <Button asChild className="bg-sdg-blue hover:bg-sdg-navy text-white rounded-full px-8 py-6 text-lg shadow-md">
-            <Link to="/tutorial">Start the Tutorial</Link>
-          </Button>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button asChild className="bg-sdg-blue hover:bg-sdg-navy text-white rounded-full px-8 py-6 text-lg shadow-md">
+              <Link to="/tutorial">Scratch Tutorial</Link>
+            </Button>
+            <Button asChild className="bg-sdg-navy hover:bg-sdg-blue text-white rounded-full px-8 py-6 text-lg shadow-md">
+              <Link to="/presentation">Presentation Guide</Link>
+            </Button>
+          </div>
         </div>
       </section>
     </Layout>

@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -34,6 +33,11 @@ const Footer = () => {
               <li>
                 <Link to="/tutorial" className="text-gray-400 hover:text-white transition-colors">
                   Scratch Tutorial
+                </Link>
+              </li>
+              <li>
+                <Link to="/presentation" className="text-gray-400 hover:text-white transition-colors">
+                  Presentation Template
                 </Link>
               </li>
             </ul>

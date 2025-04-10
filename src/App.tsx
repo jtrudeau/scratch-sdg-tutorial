@@ -23,6 +23,7 @@ import SDG15Detail from "./pages/SDG15Detail";
 import SDG16Detail from "./pages/SDG16Detail";
 import SDG17Detail from "./pages/SDG17Detail";
 import Tutorial from "./pages/Tutorial";
+import Presentation from "./pages/Presentation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -57,6 +58,7 @@ const App = () => (
           <Route path="/sdg16" element={<SDG16Detail />} />
           <Route path="/sdg17" element={<SDG17Detail />} />
           <Route path="/tutorial" element={<Tutorial />} />
+          <Route path="/presentation" element={<Presentation />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

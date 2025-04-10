@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -34,11 +33,17 @@ const Navbar = () => {
             >
               SDG 4
             </Link>
+            <Link 
+              to="/presentation" 
+              className={`px-3 py-2 font-medium ${isActive('/presentation') ? 'text-sdg-blue' : 'text-gray-600 hover:text-sdg-blue'}`}
+            >
+              Presentation
+            </Link>
             <Button 
               asChild 
               className={`${isActive('/tutorial') ? 'bg-sdg-navy' : 'bg-sdg-blue hover:bg-sdg-navy'} text-white ml-4`}
             >
-              <Link to="/tutorial">Start Tutorial</Link>
+              <Link to="/tutorial">Scratch Tutorial</Link>
             </Button>
           </nav>
           
