@@ -58,7 +58,7 @@ const Tutorial = () => {
             <TutorialStep 
               number={1} 
               title="Create a New Scratch Project"
-              imageSrc="/lovable-uploads/bf479945-8dd9-41c4-86b0-9b957b68c72e.png"
+              imageSrc="/images/bf479945-8dd9-41c4-86b0-9b957b68c72e.png"
             >
               <FormattedText text="Start by opening Scratch and creating a new project:" />
               <ol className="list-decimal list-inside space-y-2 mb-4">

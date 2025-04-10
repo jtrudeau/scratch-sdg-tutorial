@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+# SDG Heroes Unite - Scratch Tutorial for Global Goals
 
-## Project info
+An interactive tutorial platform designed to help 6th graders learn to create Scratch projects focused on the UN Sustainable Development Goals. This project provides structured tutorials, resources, and examples to engage students in coding while exploring global challenges.
 
-**URL**: https://lovable.dev/projects/38586a97-906d-4ba9-8b2b-f08e8f86eff1
+## Project Overview
 
-## How can I edit this code?
+The SDG Heroes Unite platform serves as a comprehensive learning resource that:
 
-There are several ways of editing your application.
+- Guides students through creating Scratch projects addressing SDG themes
+- Provides step-by-step tutorials with visual aids
+- Includes examples of completed projects for inspiration
+- Offers educational resources about the UN Sustainable Development Goals
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/38586a97-906d-4ba9-8b2b-f08e8f86eff1) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+To run this project locally:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
-- Vite
+- Next.js
 - TypeScript
 - React
-- shadcn-ui
 - Tailwind CSS
+- shadcn/ui components
 
-## How can I deploy this project?
+## Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/38586a97-906d-4ba9-8b2b-f08e8f86eff1) and click on Share -> Publish.
+- `/app`: Application routes and components
+- `/components`: Reusable UI components
+- `/public`: Static assets and images
+- `/styles`: CSS and styling files
 
-## Can I connect a custom domain to my Lovable project?
+## Contributing
 
-Yes it is!
+Contributions to improve the tutorials or add new features are welcome. Please feel free to submit pull requests or open issues to discuss potential changes.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the LICENSE file for details.
