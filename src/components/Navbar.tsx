@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center">
             <span className="text-2xl font-bold text-sdg-blue">SDG Heroes</span>
-            <span className="bg-sdg-blue text-white text-xs px-2 py-1 rounded ml-2">Unite</span>
+            {/* <span className="bg-sdg-blue text-white text-xs px-2 py-1 rounded ml-2">Unite</span> */}
           </Link>
           
           <nav className="hidden md:flex items-center space-x-4">

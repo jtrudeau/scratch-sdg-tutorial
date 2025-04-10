@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import SDGCard from '@/components/SDGCard';
 
@@ -9,21 +8,21 @@ const SDGList = () => {
       title: "No Poverty",
       color: "#E5243B",
       description: "End poverty in all its forms everywhere.",
-      link: "/sdgs/1"
+      link: "/sdg1"
     },
     {
       id: 2,
       title: "Zero Hunger",
       color: "#DDA63A",
       description: "End hunger, achieve food security and improved nutrition and promote sustainable agriculture.",
-      link: "/sdgs/2"
+      link: "/sdg2"
     },
     {
       id: 3,
       title: "Good Health and Well-being",
       color: "#4C9F38",
       description: "Ensure healthy lives and promote well-being for all at all ages.",
-      link: "/sdgs/3"
+      link: "/sdg3"
     },
     {
       id: 4,
@@ -37,91 +36,91 @@ const SDGList = () => {
       title: "Gender Equality",
       color: "#FF3A21",
       description: "Achieve gender equality and empower all women and girls.",
-      link: "/sdgs/5"
+      link: "/sdg5"
     },
     {
       id: 6,
       title: "Clean Water and Sanitation",
       color: "#26BDE2",
       description: "Ensure availability and sustainable management of water and sanitation for all.",
-      link: "/sdgs/6"
+      link: "/sdg6"
     },
     {
       id: 7,
       title: "Affordable and Clean Energy",
       color: "#FCC30B",
       description: "Ensure access to affordable, reliable, sustainable and modern energy for all.",
-      link: "/sdgs/7"
+      link: "/sdg7"
     },
     {
       id: 8,
       title: "Decent Work and Economic Growth",
       color: "#A21942",
       description: "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.",
-      link: "/sdgs/8"
+      link: "/sdg8"
     },
     {
       id: 9,
       title: "Industry, Innovation and Infrastructure",
       color: "#FD6925",
       description: "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.",
-      link: "/sdgs/9"
+      link: "/sdg9"
     },
     {
       id: 10,
       title: "Reduced Inequalities",
       color: "#DD1367",
       description: "Reduce inequality within and among countries.",
-      link: "/sdgs/10"
+      link: "/sdg10"
     },
     {
       id: 11,
       title: "Sustainable Cities and Communities",
       color: "#FD9D24",
       description: "Make cities and human settlements inclusive, safe, resilient and sustainable.",
-      link: "/sdgs/11"
+      link: "/sdg11"
     },
     {
       id: 12,
       title: "Responsible Consumption and Production",
       color: "#BF8B2E",
       description: "Ensure sustainable consumption and production patterns.",
-      link: "/sdgs/12"
+      link: "/sdg12"
     },
     {
       id: 13,
       title: "Climate Action",
       color: "#3F7E44",
       description: "Take urgent action to combat climate change and its impacts.",
-      link: "/sdgs/13"
+      link: "/sdg13"
     },
     {
       id: 14,
       title: "Life Below Water",
       color: "#0A97D9",
       description: "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
-      link: "/sdgs/14"
+      link: "/sdg14"
     },
     {
       id: 15,
       title: "Life on Land",
       color: "#56C02B",
       description: "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.",
-      link: "/sdgs/15"
+      link: "/sdg15"
     },
     {
       id: 16,
       title: "Peace, Justice and Strong Institutions",
       color: "#00689D",
       description: "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.",
-      link: "/sdgs/16"
+      link: "/sdg16"
     },
     {
       id: 17,
       title: "Partnerships for the Goals",
       color: "#19486A",
       description: "Strengthen the means of implementation and revitalize the global partnership for sustainable development.",
-      link: "/sdgs/17"
+      link: "/sdg17"
     }
   ];
 
