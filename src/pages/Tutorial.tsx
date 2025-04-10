@@ -49,7 +49,7 @@ const Tutorial = () => {
                 rel="noopener noreferrer" 
                 className="inline-block bg-blue-100 hover:bg-blue-200 text-blue-800 px-4 py-2 rounded-md transition-colors"
               >
-                Visit Official Scratch Tutorials
+                Visit Official Scratch Tutorials. You will need to log in to your Scratch account to access the tutorials..
               </a>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Tutorial = () => {
             <TutorialStep 
               number={1} 
               title="Create a New Scratch Project"
-              imageSrc="/images/bf479945-8dd9-41c4-86b0-9b957b68c72e.png"
+              imageSrc="./images/bf479945-8dd9-41c4-86b0-9b957b68c72e.png"
             >
               <FormattedText text="Start by opening Scratch and creating a new project:" />
               <ol className="list-decimal list-inside space-y-2 mb-4">
@@ -142,44 +142,36 @@ const Tutorial = () => {
                 when green flag clicked<br />
                 set [score v] to (0)<br />
                 set [currentQuestion v] to (1)<br />
-                ask (item (currentQuestion) of [questions v]) and wait
+                say [Type only the number of your answer to each question: 1, 2, 3, or 4] for (5) seconds<br />
+                ask (join [Question: ] (item (currentQuestion) of [questions v])) and wait
               </ScratchBlock>
 
               <p className="font-bold mb-2">Check Answer and Move to Next Question:</p>
               <ScratchBlock>
-                when I receive [checkAnswer v]<br />
                 if &lt;(answer) = (item (currentQuestion) of [answers v])&gt; then<br />
+                &nbsp;&nbsp;say [Correct!] for (2) seconds<br />
                 &nbsp;&nbsp;change [score v] by (1)<br />
-                &nbsp;&nbsp;say [Correct! Great job!] for (2) seconds<br />
                 else<br />
-                &nbsp;&nbsp;say [Not quite. The answer is] for (1) seconds<br />
-                &nbsp;&nbsp;say (item (currentQuestion) of [answers v]) for (2) seconds<br />
+                &nbsp;&nbsp;say (join [Oops! Correct answer is: ] (item (currentQuestion) of [answers v])) for (3) seconds<br />
                 end<br />
                 change [currentQuestion v] by (1)<br />
                 if &lt;(currentQuestion) &gt; (length of [questions v])&gt; then<br />
-                &nbsp;&nbsp;broadcast [endGame v]<br />
+                &nbsp;&nbsp;say (join [Quiz over! Your score is ] (score) [ /4]) for (5) seconds<br />
                 else<br />
-                &nbsp;&nbsp;ask (item (currentQuestion) of [questions v]) and wait<br />
+                &nbsp;&nbsp;ask (join [Question: ] (item (currentQuestion) of [questions v])) and wait<br />
                 end
               </ScratchBlock>
 
-              <p className="font-bold mb-2">When the Player Answers:</p>
-              <ScratchBlock>
-                when I receive [answer v]<br />
-                broadcast [checkAnswer v]
-              </ScratchBlock>
-
-              <p className="font-bold mb-2">When the Game Ends:</p>
-              <ScratchBlock>
-                when I receive [endGame v]<br />
-                say [Quiz complete!] for (2) seconds<br />
-                say (join [Your score: ] (score)) for (2) seconds<br />
-                if &lt;(score) = (length of [questions v])&gt; then<br />
-                &nbsp;&nbsp;say [Perfect score! You're an education expert!] for (3) seconds<br />
-                else<br />
-                &nbsp;&nbsp;say [Good job! Keep learning about SDG 4!] for (3) seconds<br />
-                end
-              </ScratchBlock>
+              <p className="mb-4">Based on the screenshot, you'll notice we're using:</p>
+              <ul className="list-disc list-inside space-y-2 mb-4">
+                <li>A simpler direct approach with answers comparing to the current question</li>
+                <li>Clear instructions at the beginning for players to know how to respond</li>
+                <li>Concatenated text using the <strong>join</strong> block to format questions and answers nicely</li>
+                <li>A score counter that shows the final score out of the total number of questions</li>
+              </ul>
+              
+              <p className="mb-4">Your quiz wizard sprite should look similar to the image below when you're done coding:</p>
+              <img src="./images/scratch-game.png" alt="Quiz Game Screenshot" className="rounded-md border border-gray-200 shadow-sm my-4" />
             </TutorialStep>
 
             <TutorialStep 
@@ -247,6 +239,37 @@ const Tutorial = () => {
               </ol>
               <p>Share your game with friends and family to help spread awareness about the importance of quality education for all!</p>
             </TutorialStep>
+          </div>
+
+          <div className="mt-12 bg-blue-50 p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-bold text-sdg-navy mb-4">Sample Project</h2>
+            <p className="text-gray-600 mb-6">
+              Here's a complete example of the SDG4 Quiz Game that you can explore and remix:
+            </p>
+            <div className="flex justify-center mb-6">
+              <iframe 
+                src="https://scratch.mit.edu/projects/1157295070/embed" 
+                allowTransparency={true}
+                width="485" 
+                height="402" 
+                frameBorder="0" 
+                scrolling="no" 
+                allowFullScreen
+                title="SDG4 Quiz Game" 
+                className="border border-gray-300 rounded-md shadow-md"
+              ></iframe>
+            </div>
+            <p className="text-sm text-gray-500 text-center mb-4">
+              Click the green flag to start the quiz and follow the instructions on screen!
+            </p>
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-4">
+              <p className="text-yellow-800">
+                <strong>Note:</strong> This is a first draft quiz using simple number inputs. As you build your own version, 
+                consider enhancing it with multiple-choice options for each question. You could display 4 answer choices 
+                and ask players to select the correct one by number. This would make the quiz more engaging and help players 
+                learn through the process of elimination.
+              </p>
+            </div>
           </div>
 
           <div className="mt-12 bg-green-50 p-6 rounded-lg shadow-md">
