@@ -105,7 +105,7 @@ const SDG2Detail = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1594489573182-547ba917714c?auto=format&fit=crop&w=500&q=80" 
+                src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=500&q=80" 
                 alt="Sustainable farming" 
                 className="rounded-lg shadow-md w-full"
               />
@@ -115,7 +115,7 @@ const SDG2Detail = () => {
                 className="rounded-lg shadow-md w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1571945755790-2e917c7fc4e6?auto=format&fit=crop&w=500&q=80" 
+                src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=500&q=80" 
                 alt="Community garden" 
                 className="rounded-lg shadow-md w-full"
               />

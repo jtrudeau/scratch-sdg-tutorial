@@ -118,23 +118,23 @@ const SDG11Detail = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1518799175676-a0fed7996acb?auto=format&fit=crop&w=500&q=80" 
-                alt="Sustainable urban development" 
+                src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=500&q=80" 
+                alt="Smart sustainable city" 
                 className="rounded-lg shadow-md w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1590947132387-8cc57c366688?auto=format&fit=crop&w=500&q=80" 
-                alt="Public transportation" 
+                src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=500&q=80" 
+                alt="Green public transportation" 
                 className="rounded-lg shadow-md w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1618001789159-ffffe6f96ef2?auto=format&fit=crop&w=500&q=80" 
-                alt="Green urban spaces" 
+                src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?auto=format&fit=crop&w=500&q=80" 
+                alt="Urban community garden" 
                 className="rounded-lg shadow-md w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1506833345857-935a8275b07a?auto=format&fit=crop&w=500&q=80" 
-                alt="Sustainable housing" 
+                src="https://images.unsplash.com/photo-1501084291732-13b1ba8f0ebc?auto=format&fit=crop&w=500&q=80" 
+                alt="Sustainable urban housing" 
                 className="rounded-lg shadow-md w-full"
               />
             </div>

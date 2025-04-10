@@ -112,13 +112,8 @@ const SDG5Detail = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1574221120589-ebc13f2d5334?auto=format&fit=crop&w=500&q=80" 
+                src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=500&q=80" 
                 alt="Women's leadership" 
-                className="rounded-lg shadow-md w-full"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1621352404112-52559ba24ed3?auto=format&fit=crop&w=500&q=80" 
-                alt="Gender equality" 
                 className="rounded-lg shadow-md w-full"
               />
               <img 
@@ -129,6 +124,11 @@ const SDG5Detail = () => {
               <img 
                 src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=500&q=80" 
                 alt="Girls education" 
+                className="rounded-lg shadow-md w-full"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?auto=format&fit=crop&w=500&q=80" 
+                alt="Gender equality" 
                 className="rounded-lg shadow-md w-full"
               />
             </div>
