@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -40,6 +39,21 @@ const SDG4Detail = () => {
       id: "4.7",
       title: "Education for sustainable development",
       description: "By 2030, ensure that all learners acquire the knowledge and skills needed to promote sustainable development, including, among others, through education for sustainable development and sustainable lifestyles, human rights, gender equality, promotion of a culture of peace and non-violence, global citizenship and appreciation of cultural diversity and of culture's contribution to sustainable development."
+    },
+    {
+      id: "4.a",
+      title: "Build and upgrade inclusive education facilities",
+      description: "Build and upgrade education facilities that are child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all."
+    },
+    {
+      id: "4.b",
+      title: "Expand scholarships for higher education",
+      description: "By 2020, substantially expand globally the number of scholarships available to developing countries, in particular least developed countries, small island developing States and African countries, for enrolment in higher education, including vocational training and information and communications technology, technical, engineering and scientific programmes, in developed countries and other developing countries."
+    },
+    {
+      id: "4.c",
+      title: "Increase supply of qualified teachers",
+      description: "By 2030, substantially increase the supply of qualified teachers, including through international cooperation for teacher training in developing countries, especially least developed countries and small island developing States."
     }
   ];
 
@@ -130,8 +144,27 @@ const SDG4Detail = () => {
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-sdg-navy mb-8 text-center">SDG 4 Targets</h2>
+          
+          <h3 className="text-2xl font-bold text-sdg-navy mb-6">Core Targets</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {targets.slice(0, 7).map((target) => (
+              <Card key={target.id} className="border-l-4 border-sdg-education">
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <span className="text-sdg-education font-bold mr-2">{target.id}</span>
+                    <span>{target.title}</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">{target.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          
+          <h3 className="text-2xl font-bold text-sdg-navy mb-6">Implementation Targets</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {targets.map((target) => (
+            {targets.slice(7).map((target) => (
               <Card key={target.id} className="border-l-4 border-sdg-education">
                 <CardHeader>
                   <CardTitle className="flex items-center">

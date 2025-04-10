@@ -49,6 +49,21 @@ const SDG3Detail = () => {
       id: "3.9",
       title: "Reduce illnesses from hazardous chemicals and pollution",
       description: "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination."
+    },
+    {
+      id: "3.a",
+      title: "Implement tobacco control framework",
+      description: "Strengthen the implementation of the World Health Organization Framework Convention on Tobacco Control in all countries, as appropriate."
+    },
+    {
+      id: "3.b",
+      title: "Support vaccine research and development",
+      description: "Support the research and development of vaccines and medicines for the communicable and non-communicable diseases that primarily affect developing countries, provide access to affordable essential medicines and vaccines, in accordance with the Doha Declaration on the TRIPS Agreement and Public Health."
+    },
+    {
+      id: "3.c",
+      title: "Increase health financing and workforce",
+      description: "Substantially increase health financing and the recruitment, development, training and retention of the health workforce in developing countries, especially in least developed countries and small island developing States."
     }
   ];
 
@@ -138,8 +153,27 @@ const SDG3Detail = () => {
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-sdg-navy mb-8 text-center">SDG 3 Targets</h2>
+          
+          <h3 className="text-2xl font-bold text-sdg-navy mb-6">Core Targets</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {targets.slice(0, 9).map((target) => (
+              <Card key={target.id} className="border-l-4 border-[#4C9F38]">
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <span className="text-[#4C9F38] font-bold mr-2">{target.id}</span>
+                    <span>{target.title}</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">{target.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          
+          <h3 className="text-2xl font-bold text-sdg-navy mb-6">Implementation Targets</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {targets.map((target) => (
+            {targets.slice(9).map((target) => (
               <Card key={target.id} className="border-l-4 border-[#4C9F38]">
                 <CardHeader>
                   <CardTitle className="flex items-center">
