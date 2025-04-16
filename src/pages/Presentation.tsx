@@ -18,7 +18,7 @@ const Presentation = () => {
                 rel="noopener noreferrer"
                 className="text-sdg-blue hover:text-sdg-navy underline"
               >
-                View Example SDG Presentation
+                View Example SDG Presentation (Use ← → arrow keys to navigate)
               </a>
             </p>
           </div>
