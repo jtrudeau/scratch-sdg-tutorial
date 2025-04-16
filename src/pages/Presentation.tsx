@@ -13,7 +13,7 @@ const Presentation = () => {
             <p className="mb-2 text-center">
               <strong className="text-lg">Example Presentation:</strong>{' '}
               <a 
-                href="https://preview--colorful-recycletastic-presentation.lovable.app/" 
+                href="https://jtrudeau.github.io/colorful-recycletastic-presentation/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-sdg-blue hover:text-sdg-navy underline"
