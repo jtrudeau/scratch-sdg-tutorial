@@ -272,7 +272,7 @@ const Presentation = () => {
                       <li>Explanation of how it works and its main features</li>
                       <li>Connection to your chosen SDG and the specific problem</li>
                       <li>Discussion of limitations and potential future improvements</li>
-                      <li>If you built a working prototype, consider a brief live demonstration</li>
+                      <li>Provide a brief live demonstration of your prototype (Scratch or Physical Prototype). This can be an embedded video in your presentation.</li>
                     </ul>
                   </div>
                   
@@ -313,10 +313,10 @@ const Presentation = () => {
                   <p className="text-gray-600 mb-2"><strong>Tips:</strong></p>
                   <ul className="list-disc pl-6 space-y-1 text-gray-600 mb-4">
                     <li>Practice your demo beforehand to ensure it's smooth.</li>
-                    <li>Make sure you have backups in case of technical issues (e.g., screenshots, pictures).</li>
+                    <li>Make sure you have backups in case of technical issues (e.g., screenshots, pictures, video).</li>
                     <li>Keep your demo concise – aim for 1-2 minutes max.</li>
                     <li>Assign a specific team member to lead the demo, with others ready to assist if needed.</li>
-                    <li>Test your equipment in the presentation room before your scheduled time if possible.</li>
+                    <li>Test your equipment before your scheduled time if possible.</li>
                   </ul>
                   
                   <div className="mb-5">
@@ -334,7 +334,7 @@ const Presentation = () => {
                       <li className="mt-2"><strong>For a Physical Prototype:</strong>
                         <ul className="list-disc pl-6 mt-1">
                           <li>Test all components before the presentation day</li>
-                          <li>Bring extra batteries, cables, or any other necessary supplies</li>
+                          <li>Bring extra batteries or any other necessary supplies</li>
                           <li>Prepare a brief explanation for each step of the demonstration</li>
                           <li>Consider how to make the demo visible to the entire audience</li>
                         </ul>
@@ -380,22 +380,24 @@ const Presentation = () => {
                 <div className="mb-5">
                   <h4 className="text-lg font-medium text-sdg-navy mb-2">Researching Your SDG</h4>
                   <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                    <li>Start with the <a href="https://sdgs.un.org/goals" className="text-sdg-blue hover:text-sdg-navy underline">official UN SDG website</a> for baseline information</li>
+                    <li>Start with our <Link to="/sdgs" className="text-sdg-blue hover:text-sdg-navy underline">SDG summaries</Link> for baseline information.</li>
+                    <li>Also use the official <Link to="https://sdgs.un.org/goals" className="text-sdg-blue hover:text-sdg-navy underline">UN SDG website</Link> for more information as needed.</li>
                     <li>Use the SDG Tracker tool to find current global progress metrics</li>
                     <li>Review case studies from the SDG Knowledge Platform</li>
-                    <li>Connect your research to local issues in your community</li>
-                    <li>Search for organizations in your region working on this SDG</li>
+                    <li>Connect your research to local issues in your community if possible</li>
+                    <li>Search for organizations working on this SDG</li>
                   </ul>
                 </div>
 
                 <div>
                   <h4 className="text-lg font-medium text-sdg-navy mb-2">Creating Compelling Visuals</h4>
                   <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                    <li>Use the official SDG color and icon for your goal consistently</li>
-                    <li>Include a mix of charts/graphs, photos, and minimal text on slides</li>
+                    <li>Add colour! You can use the official SDG color as an accent colour.</li>
+                    <li>Include a mix of charts/graphs, photos, and <strong>minimal text</strong> on slides</li>
                     <li>Aim for 7-10 slides total (not counting title/ending slides)</li>
                     <li>Use high-quality, properly attributed images</li>
                     <li>Incorporate before/after visuals when discussing impact</li>
+                    <li><strong>Keep track of your sources!</strong></li>
                   </ul>
                 </div>
               </div>
@@ -404,9 +406,9 @@ const Presentation = () => {
                 <h3 className="text-xl font-bold text-sdg-navy mb-3">Presentation Delivery Tips</h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600">
                   <li>Practice your timing - aim to speak for 1-2 minutes per slide</li>
-                  <li>Begin with a compelling hook or statistic to engage your audience</li>
+                  <li>Begin with a good hook or statistic to engage your audience</li>
                   <li>Distribute speaking parts evenly among group members</li>
-                  <li>Prepare for Q&A with additional research beyond your slides</li>
+                  <li>Prepare for Q&A with any additional research beyond your slides</li>
                   <li>End with a clear, actionable takeaway message</li>
                 </ul>
               </div>
@@ -416,7 +418,7 @@ const Presentation = () => {
               <h2 className="text-3xl font-bold text-sdg-navy mb-4">Submission Process</h2>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <ol className="list-decimal pl-6 space-y-2 text-gray-600">
-                  <li>Submit your presentation file by sharing through Canva</li>
+                  <li>Share your presentation file through Canva</li>
                   <li>Each group will present during class on <strong>[PRESENTATION DATES]</strong></li>
                   <li>Be prepared to answer questions from classmates and teachers</li>
                 </ol>
