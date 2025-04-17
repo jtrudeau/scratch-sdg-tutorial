@@ -406,6 +406,7 @@ const Presentation = () => {
                 <h3 className="text-xl font-bold text-sdg-navy mb-3">Presentation Delivery Tips</h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600">
                   <li>Practice your timing - aim to speak for 1-2 minutes per slide</li>
+                  <li>Prepare a script that complements your slides rather than repeating what's on them (<Link to="/script-example" className="text-sdg-blue hover:text-sdg-navy underline">see example script</Link>)</li>
                   <li>Begin with a good hook or statistic to engage your audience</li>
                   <li>Distribute speaking parts evenly among group members</li>
                   <li>Prepare for Q&A with any additional research beyond your slides</li>
