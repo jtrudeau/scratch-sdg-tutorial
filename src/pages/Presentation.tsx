@@ -21,6 +21,14 @@ const Presentation = () => {
                 View Example SDG Presentation (Use ← → arrow keys to navigate)
               </a>
             </p>
+            <p className="text-center">
+              <Link 
+                to="/script-example" 
+                className="text-sdg-blue hover:text-sdg-navy underline"
+              >
+                View Example Presentation Script
+              </Link>
+            </p>
           </div>
         </div>
       </section>
@@ -179,8 +187,116 @@ const Presentation = () => {
                     </ul>
                   </div>
                   
+                  <div className="mb-5">
+                    <h4 className="text-lg font-medium text-sdg-navy mb-2">Research With an AI Tool</h4>
+                    <p className="text-gray-600 mb-3">
+                      <a 
+                        href="https://www.perplexity.ai/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sdg-blue hover:text-sdg-navy underline"
+                      >
+                        Perplexity AI
+                      </a> is a research assistant that can help you find reliable statistics and information. Here's a step-by-step guide:
+                    </p>
+                    
+                    <div className="bg-gray-50 p-4 rounded-md mb-4">
+                      <h5 className="font-medium text-sdg-navy mb-2">Step 1: Research & Data Gathering</h5>
+                      <p className="text-gray-600 mb-2">Use real numbers to make your slide clear, compelling, and evidence-based.</p>
+                      
+                      <ol className="list-decimal pl-6 space-y-2 text-gray-600">
+                        <li>
+                          <strong>Run the Perplexity Prompt</strong>
+                          <p className="mt-1">Copy-and-paste this into Perplexity. Replace "YOUR PROBLEM" with the specific problem you are trying to solve.</p>
+                          <div className="bg-white p-3 rounded border border-gray-300 my-2 text-sm">
+                            As an expert researcher, find the 5 most recent, credible statistics that illustrate the scope of "[YOUR PROBLEM]". For each statistic, please provide:<br/>
+                            1. What it measures (in one sentence)<br/>
+                            2. The exact figure or percentage<br/>
+                            3. Source name with a link<br/>
+                            4. Year of publication<br/>
+                            Only use reputable data providers such as UN SDG Indicators, WHO, Our World in Data, Statistics Canada (or equivalent national agencies), and major NGOs. Organize your answer in a simple table.
+                          </div>
+                          <p className="mt-2 text-gray-600 italic">Example of YOUR PROBLEM: "I'm addressing the lack of clean drinking water in my community."</p>
+                        </li>
+                        <li>
+                          <strong>Capture Your Results</strong>
+                          <p className="mt-1">From Perplexity's output, build a table in your notes:</p>
+                          <div className="overflow-x-auto mt-2">
+                            <table className="min-w-full border border-gray-300">
+                              <thead>
+                                <tr className="bg-gray-100">
+                                  <th className="border border-gray-300 px-3 py-2 text-left">Statistic Description</th>
+                                  <th className="border border-gray-300 px-3 py-2 text-left">Value</th>
+                                  <th className="border border-gray-300 px-3 py-2 text-left">Source & Link</th>
+                                  <th className="border border-gray-300 px-3 py-2 text-left">Year</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td className="border border-gray-300 px-3 py-2">e.g. People without water</td>
+                                  <td className="border border-gray-300 px-3 py-2">2.2 billion</td>
+                                  <td className="border border-gray-300 px-3 py-2">WHO: Global Water Report (link)</td>
+                                  <td className="border border-gray-300 px-3 py-2">2022</td>
+                                </tr>
+                                <tr>
+                                  <td className="border border-gray-300 px-3 py-2">…</td>
+                                  <td className="border border-gray-300 px-3 py-2">…</td>
+                                  <td className="border border-gray-300 px-3 py-2">…</td>
+                                  <td className="border border-gray-300 px-3 py-2">…</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </li>
+                        <li>
+                          <strong>Design Your Slide</strong>
+                          <ul className="list-disc pl-6 mt-1">
+                            <li>Layout your findings in a chart or a table, or as a list.</li>
+                            <li>Highlight one standout number by using a simple chart (bar, pie, or icon-based graphic).</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Write a Caption</strong>
+                          <ul className="list-disc pl-6 mt-1">
+                            <li>Under your chart, add one sentence that explains why this number matters:</li>
+                            <p className="italic mt-1">"Every year, 2.2 billion people lack access to safe drinking water—showing how urgent it is to innovate clean-water tech."</p>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Reflection Prompt</strong>
+                          <p className="mt-1">At the bottom of your slide (or in your speaker notes), answer in two sentences:</p>
+                          <ol className="list-decimal pl-6 mt-1">
+                            <li>Why you picked these statistics.</li>
+                            <li>How they support your proposed solution.</li>
+                          </ol>
+                        </li>
+                      </ol>
+                      
+                      <p className="text-gray-600 mt-4">This structure will guide you from AI-powered research through to a polished, data-driven slide that makes your technology solution shine.</p>
+                    </div>
+
+                    <div className="bg-blue-50 p-4 rounded-md mb-4">
+                      <p className="font-medium text-sdg-navy mb-2">Example of AI Research Results:</p>
+                      <ul className="space-y-3 pl-6 text-gray-600">
+                        <li>
+                          <strong>Problem Researched:</strong> Lack of clean drinking water
+                        </li>
+                        <li>
+                          <strong>Key Statistics Found:</strong>
+                          <ul className="list-disc pl-6">
+                            <li>Globally, 703 million people—1 in 11—lack access to clean water (World Vision, 2025).</li>
+                            <li>2.2 billion people worldwide did not have safely managed drinking water services in 2022 (WHO, 2023).</li>
+                            <li>In Canada, 99.9% of over 521,000 municipal drinking water tests met quality standards in 2022-23 (Ontario Ministry of the Environment, 2023).</li>
+                            <li>Between two and three billion people experience water shortages for at least one month per year (UNESCO, 2023).</li>
+                            <li>If everyone had clean water, 297,000 diarrheal deaths in children under 5 could be prevented each year (WHO, 2022).</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
                   <div className="bg-blue-50 p-4 rounded-md">
-                    <p className="font-medium text-sdg-navy mb-2">Example:</p>
+                    <p className="font-medium text-sdg-navy mb-2">Our Food Waste Example Continued:</p>
                     <ul className="space-y-3 pl-6 text-gray-600">
                       <li>
                         <strong>Selected SDGs:</strong>
@@ -192,6 +308,7 @@ const Presentation = () => {
                       <li><strong>Main Issue:</strong> Food waste contributes significantly to landfills and greenhouse gas emissions.</li>
                       <li><strong>Specific Problem:</strong> Our school cafeteria throws away large amounts of uneaten lunch every day.</li>
                       <li><strong>Key Statistic:</strong> Approximately 30% of food prepared in our cafeteria ends up in the trash.</li>
+                      <li><strong>Global Context Needed:</strong> To make your presentation complete, include 2-3 global statistics that show how this problem affects people worldwide (like the water statistics example above).</li>
                     </ul>
                   </div>
                 </div>
