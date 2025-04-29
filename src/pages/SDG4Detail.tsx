@@ -1,9 +1,14 @@
+import React from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from 'react-router-dom';
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 const SDG4Detail = () => {
+  // Scroll to top on page load
+  useScrollToTop();
+
   const targets = [
     {
       id: "4.1",

@@ -1,7 +1,9 @@
+import React from 'react';
 import Layout from '@/components/Layout';
 import TutorialStep, { ScratchBlock, formatScratchText } from '@/components/TutorialStep';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 // Helper component to render formatted text with bold quotes
 const FormattedText = ({ text }: { text: string }) => (
@@ -9,6 +11,9 @@ const FormattedText = ({ text }: { text: string }) => (
 );
 
 const Tutorial = () => {
+  // Scroll to top on page load
+  useScrollToTop();
+
   return (
     <Layout>
       <section className="py-12 bg-blue-50">
@@ -258,6 +263,19 @@ const Tutorial = () => {
                 title="SDG4 Quiz Game" 
                 className="border border-gray-300 rounded-md shadow-md"
               ></iframe>
+            </div>
+            <div className="flex justify-center mb-4">
+              <a 
+                href="https://scratch.mit.edu/projects/1157295070" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-green-100 hover:bg-green-200 text-green-800 px-4 py-2 rounded-md transition-colors inline-flex items-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+                View Full Project on Scratch
+              </a>
             </div>
             <p className="text-sm text-gray-500 text-center mb-4">
               Click the green flag to start the quiz and follow the instructions on screen!

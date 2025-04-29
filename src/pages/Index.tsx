@@ -2,8 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ArrowRight, Code, Cpu, Database } from "lucide-react";
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 const Index = () => {
+  // Scroll to top on page load
+  useScrollToTop();
+
   return (
     <Layout>
       {/* Hero Section */}

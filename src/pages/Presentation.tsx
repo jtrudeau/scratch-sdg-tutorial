@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 const Presentation = () => {
+  // Scroll to top on page load
+  useScrollToTop();
+
   return (
     <Layout>
       <section className="py-12 bg-blue-50">
@@ -205,9 +209,9 @@ const Presentation = () => {
                   </div>
                   
                   <div className="mb-5">
-                    <h4 className="text-lg font-medium text-sdg-navy mb-2">Research With an AI Tool</h4>
+                    <h4 className="text-lg font-medium text-sdg-navy mb-2">Research Statistics With an AI Tool</h4>
                     <p className="text-gray-600 mb-3">
-                      Finding reliable statistics and information about your SDG is crucial for creating an impactful presentation. We've created a detailed guide to help you use Perplexity AI for your research.
+                      Finding reliable statistics and information about your SDG is important for creating an impactful presentation. We've created a guide to help you use Perplexity AI, an AI tool, for your research.
                     </p>
                     
                     <div className="bg-gray-50 p-4 rounded-md mb-4">

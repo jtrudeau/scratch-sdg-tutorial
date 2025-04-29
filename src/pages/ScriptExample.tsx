@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 const ScriptExample = () => {
+  // Scroll to top on page load
+  useScrollToTop();
+  
   return (
     <Layout>
       <section className="py-12 bg-blue-50">

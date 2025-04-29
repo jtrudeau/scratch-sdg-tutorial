@@ -1,7 +1,11 @@
 import Layout from '@/components/Layout';
 import SDGCard from '@/components/SDGCard';
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 const SDGList = () => {
+  // Scroll to top on page load
+  useScrollToTop();
+  
   const sdgs = [
     {
       id: 1,
