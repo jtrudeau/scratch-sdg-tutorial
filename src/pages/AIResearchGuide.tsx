@@ -33,7 +33,7 @@ const AIResearchGuide = () => {
             {/* Introduction */}
             <div>
               <h2 className="text-3xl font-bold text-sdg-navy mb-4">Using Perplexity AI for SDG Research</h2>
-              <p className="text-gray-600 mb-4">Finding reliable statistics and information is crucial for creating an impactful SDG presentation. Perplexity AI is a research assistant that can help you discover credible data about your chosen Sustainable Development Goal.</p>
+              <p className="text-gray-600 mb-4">Finding reliable statistics and information is important for creating your impactful SDG presentation. Perplexity AI is an AI search/research tool that can help you discover credible data about your chosen Sustainable Development Goal.</p>
               
               <div className="bg-white p-6 rounded-lg shadow-md mb-6">
                 <h3 className="text-xl font-bold text-sdg-navy mb-3">Why Use Perplexity AI?</h3>
@@ -41,7 +41,7 @@ const AIResearchGuide = () => {
                   <li>It searches multiple sources at once to find recent statistics</li>
                   <li>You can use it anonymously - no account required</li>
                   <li>It provides sources for all information, making citation easier</li>
-                  <li>It helps you find data specific to your SDG challenge</li>
+                  <li>It can help you find data specific to your SDG challenge</li>
                 </ul>
               </div>
               
@@ -51,8 +51,8 @@ const AIResearchGuide = () => {
                 <ol className="list-decimal pl-6 space-y-2 text-gray-600">
                   <li>Go to <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" className="text-sdg-blue hover:text-sdg-navy underline">https://www.perplexity.ai/</a></li>
                   <li>You can start searching immediately - no login required</li>
-                  <li>For classroom use, you may need to use the "Basic" version, which is free</li>
-                  <li>Use the search box at the top to enter your research query</li>
+                  <li>For classroom use, you may need to use the "Basic" version, which is free and can be done anonymously</li>
+                  <li>Use the search box at the top to enter your research query following the instructions below</li>
                 </ol>
               </div>
             </div>
@@ -77,7 +77,9 @@ const AIResearchGuide = () => {
                         <li>Source name with a link</li>
                         <li>Year of publication</li>
                       </ol>
-                      <p className="text-sm mt-2">Only use reputable data providers such as UN SDG Indicators, WHO, Our World in Data, Statistics Canada (or equivalent national agencies), and major NGOs. Organize your answer in a simple table.</p>
+                      <p className="text-sm mt-2">Only use reputable data providers such as UN SDG Indicators, WHO, Our World in Data, Statistics Canada (or equivalent national agencies), and major NGOs. Organize your answer in a simple table. 
+                        It would be ideal if the search results were from the last year or two.
+                      </p>
                     </div>
                     
                     <div className="mt-3 p-3 bg-blue-50 rounded-md">
@@ -93,7 +95,28 @@ const AIResearchGuide = () => {
                   
                   <li>
                     <h4 className="text-lg font-medium text-sdg-navy mb-2">Capture Your Results</h4>
-                    <p className="mb-2">From Perplexity's output, build a table in your notes:</p>
+                    <p className="mb-2">From Perplexity's output, export your research for your records:</p>
+                    
+                    <div className="mb-4 bg-yellow-50 p-4 rounded-md border-l-4 border-yellow-500">
+                      <h5 className="text-lg font-medium text-yellow-800 mb-2">Exporting from Perplexity</h5>
+                      <div className="flex items-start">
+                        <div className="min-w-0 flex-1">
+                          <ol className="list-decimal pl-6 space-y-2 text-gray-700">
+                            <li>After getting your research results, locate the "Export" button in the Perplexity interface (usually shown at the bottom of your research results)</li>
+                            <li>Click on "Export" and select "Word (.docx)" from the options</li>
+                            <li>Save the file to your computer with a clear name like "SDG12_FoodWaste_Research.docx"</li>
+                            <li>This document will contain all your research findings with sources for your records</li>
+                          </ol>
+                        </div>
+                        <div className="ml-3 flex-shrink-0">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <p className="mb-4">Next, create a table in your presentation with the key statistics from your research:</p>
                     <div className="overflow-x-auto mt-2">
                       <table className="min-w-full border border-gray-300">
                         <thead>
@@ -120,7 +143,7 @@ const AIResearchGuide = () => {
                         </tbody>
                       </table>
                     </div>
-                    <p className="mt-3 text-sm italic">Tip: Consider copying this table structure for your own research notes.</p>
+                    <p className="mt-3 text-sm italic">Tip: Include the exported .docx file in your project documentation for your teacher to reference.</p>
                   </li>
                   
                   <li>
