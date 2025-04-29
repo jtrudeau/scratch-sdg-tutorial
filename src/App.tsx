@@ -25,6 +25,7 @@ import SDG17Detail from "./pages/SDG17Detail";
 import Tutorial from "./pages/Tutorial";
 import Presentation from "./pages/Presentation";
 import ScriptExample from "./pages/ScriptExample";
+import AIResearchGuide from "./pages/AIResearchGuide";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -61,6 +62,7 @@ const App = () => (
           <Route path="/tutorial" element={<Tutorial />} />
           <Route path="/presentation" element={<Presentation />} />
           <Route path="/script-example" element={<ScriptExample />} />
+          <Route path="/ai-research-guide" element={<AIResearchGuide />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
