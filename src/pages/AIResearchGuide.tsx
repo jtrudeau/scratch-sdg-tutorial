@@ -323,6 +323,93 @@ const AIResearchGuide = () => {
               </div>
             </div>
             
+            {/* ChatGPT for Scratch Projects */}
+            <div>
+              <h2 className="text-3xl font-bold text-sdg-navy mb-6">Using ChatGPT for Your Scratch Game</h2>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 className="text-xl font-bold text-sdg-navy mb-3">Getting Ideas for Your Scratch Project</h3>
+                <p className="text-gray-600 mb-4">ChatGPT can help you brainstorm and develop your Scratch game. You can use it anonymously without creating an account.</p>
+                
+                <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg inline-flex items-center mb-6">
+                  <span>Open ChatGPT</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+                
+                <div className="bg-gray-50 p-4 rounded border border-gray-300 my-2">
+                  <p className="font-medium mb-2">Copy and paste this starter prompt:</p>
+                  <div className="bg-white p-4 rounded-md border border-gray-200 text-sm">
+                    Hi ChatGPT! My Scratch project is about [YOUR GAME OR PROJECT]. I'm in grade 6. Guide me step by step. Please keep answers short and kid‑friendly. What kinds of things can I do? I want to explore with you using a simple pingpong approach.
+                  </div>
+                </div>
+                
+                <div className="mt-6">
+                  <h4 className="text-lg font-medium text-sdg-navy mb-2">Example Questions to Ask ChatGPT</h4>
+                  <p className="text-gray-600 mb-2">After getting ChatGPT's initial response, try asking follow-up questions like:</p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                    <div className="bg-blue-50 p-3 rounded-md">
+                      <p className="font-medium text-sdg-blue">Game Design:</p>
+                      <ul className="list-disc pl-6 mt-1 text-sm">
+                        <li>How do I make a character jump when I press the space bar?</li>
+                        <li>What's a simple way to keep score in my game?</li>
+                        <li>How can I add different levels to my game?</li>
+                        <li>How do I make a sprite move back and forth?</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-50 p-3 rounded-md">
+                      <p className="font-medium text-green-600">Graphics & Effects:</p>
+                      <ul className="list-disc pl-6 mt-1 text-sm">
+                        <li>How do I change my background when the game starts?</li>
+                        <li>Can you suggest some cool effects for when my character wins?</li>
+                        <li>How do I make my sprite look like it's underwater?</li>
+                        <li>How can I make a character change costumes while moving?</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-purple-50 p-3 rounded-md">
+                      <p className="font-medium text-purple-600">Game Mechanics:</p>
+                      <ul className="list-disc pl-6 mt-1 text-sm">
+                        <li>How do I make objects that my character can collect?</li>
+                        <li>What's a simple way to create enemies in my game?</li>
+                        <li>How do I make a timer for my game?</li>
+                        <li>How can I make my sprite bounce off walls?</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-yellow-50 p-3 rounded-md">
+                      <p className="font-medium text-yellow-600">SDG Connection:</p>
+                      <ul className="list-disc pl-6 mt-1 text-sm">
+                        <li>How can I include my SDG theme in my Scratch game?</li>
+                        <li>Can you suggest game elements related to SDG [your number]?</li>
+                        <li>How do I create a quiz about my SDG in Scratch?</li>
+                        <li>What's a fun way to teach about [SDG topic] in my game?</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-yellow-100 p-4 rounded-md mt-6 border-l-4 border-yellow-500">
+                  <h4 className="flex items-center text-lg font-medium text-yellow-800 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                    Important Tips
+                  </h4>
+                  <ul className="list-disc pl-6 text-sm text-yellow-800">
+                    <li>Use ChatGPT anonymously - no need to create an account</li>
+                    <li>Don't share personal information like your name, school, or location</li>
+                    <li>If ChatGPT's answer is too complicated, ask it to explain in simpler terms</li>
+                    <li>Remember that ChatGPT might suggest things that don't work exactly as described in Scratch - you'll need to experiment!</li>
+                    <li>Always save your Scratch project frequently while implementing ideas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
